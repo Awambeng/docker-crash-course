@@ -7,4 +7,14 @@ services:
       - '4000:4000'
     volumes:
       - ./api:/app
-      - ./api:/app
+      # - ./api:/app/node_modules
+  myblog:
+    build: ./myblog
+    container_name: myblog_container
+    ports:
+      - '3000:3000'
+    volumes:
+      - ./myblog:/app
+      # - ./myblog:/app/node_modules
+    stdin_open: true
+    tty: true
