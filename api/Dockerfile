@@ -14,7 +14,7 @@ WORKDIR /app
 COPY . .
 
 # Installing the dependencies in the package.json file to the image
-RUN npm install
+RUN npm i
 
 # CMD specifies any command that will be run at runtime that is when the container is running
 CMD [ "node", "app.js" ]
