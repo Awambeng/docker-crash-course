@@ -8,7 +8,7 @@ EXPOSE 4000
 # Specifying the working directory for the image
 WORKDIR /app
 
-COPY ./package.json .
+COPY package.json .
 # Copying source code to the image
 # The first dot represent the relative path to the source files
 # The second dot is the path inside the image where we want to copy the source files
